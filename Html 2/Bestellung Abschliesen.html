@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(159, 146, 146);">
+<title> Bestellung Abschließen</title>
+<form action="mailto:Baschkem@motorsports.de" method="post">
+
+<table     border="1" style="margin-top:200px;margin-left: 600px;">
+    <caption><h1>Bestellung Abschließen</h1></caption>
+    <tbody>
+        <tr>
+            <td style="padding:"> <h2>Informationen & Vorausstattung</h2><br>
+                <label for="vname">Vorname</label>
+                <input type="text" id="vname" name="name" minlength="3" maxlength="25" required>
+                <br><br>
+                <label for="nname">Nachname</label>
+                <input type="text" id="nname" name="Nachname" minlength="3" maxlength="25" required>
+                <br><br>
+                <label for="adresse">Addresse</label>
+                <input type="text" id="adresse" name="Addresse" minlength="8" required>
+                <br><br>
+                <label for="Hausnummer">Hausnummer</label>
+                <input type="number" id="Hausnummer" name="Hausnummer" min="1" max="150">
+                <br><br>
+                <label for="Wa">Wunsch Abholtermin</label>
+                <input type="date" id="start" name="Wunschabholtermin" value="2026-11-26" min="2026-11-26"
+                    max="2028-11-26" />
+                <label for="start">Start date:</label>
+                <br><br>
+                <label for="WA">Wunschabholzeit</label>
+                <input type="time" id="appointment" name="Wunschanholzeit" min="10:00" max="18:00" required />
+                <br><br>
+                <label for="Farbe">Farbe</label>
+                <input type="color" id="Farbe" name="Farbe">
+                <br><br>
+            </td>
+            <td><h2>Auto Auswahl</h2>
+                <input type="radio" id="Amg one" name="auto Auswahl" value="Amg one" required>
+                <label for="Amg one">Amg one</label><br>
+                <input type="radio" id="Lamborghini Revuelto" name="auto Auswahl" value="Lamborghini Revuelto" required>
+                <label for="Lamborghini Revuelto">Lamborghini Revuelto</label><br>
+                <input type="radio" id="Mclaren P1" name="auto Auswahl" value="Mclaren P1" required>
+                <label for="Mclaren P1">Mclaren P1</label><br>
+                <input type="radio" id="Rimac Nevera R" name="auto Auswahl" value="Rimac Nevera R" required>
+                <label for="Ferrari La Ferrari">Rimac Nevera R</label><br>
+                <input type="radio" id="Bugatti Chiron" name="auto Auswahl" value="Bugatti Chiron" required>
+                <label for="Bugatti Chiron">Bugatti Chiron</label><br>
+            </td>
+            <td> <h2> Standart Fahrmodus Auswahl</h2>
+                <input type="radio" id="Eco" name="fahrmodus Auswahl" value="Eco" required>
+                <label for="Eco">Eco</label><br>
+                <input type="radio" id="Normal" name="fahrmodus Auswahl" value="Normal" required>
+                <label for="Normal">Normal</label><br>
+                <input type="radio" id="Sport" name="fahrmodus Auswahl" value="Sport" required>
+                <label for="Sport">Sport</label><br>
+                <input type="radio" id="Sport+" name="fahrmodus Auswahl" value="Sport+" required>
+                <label for="Sport+">Sport+</label><br>
+                <input type="radio" id="Track" name="fahrmodus Auswahl" value="Track" required>
+                <label for="Track">Track</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <required>
+                        <h2>Bestell Menge</h2>
+                    <label for="cars">Menge:</label>
+                    <select name="cars" id="cars">
+                        <option value="Menge">1</option>
+                        <option value="Menge">2</option>
+                        <option value="Menge">3</option>
+                        <option value="Menge">4</option>
+                </required>
+                </select>
+                <br><br>
+            
+            </td>
+
+            <td> <h2>Ausstattung</h2>
+                <label for="Ledersitze">Ledersitze</label>
+                <input type="checkbox" id="Ledersitze" name="Ledersitze">
+                <br>
+                <label for="Alkantara">Alkantara Lenkrad</label>
+                <input type="checkbox" id="Alkantara" name="Alkantara">
+                <br>
+                <label for="Sitzheizung">Sitzheizung</label>
+                <input type="checkbox" id="Sitzheizung" name="Sitzheizung">
+                <br>
+                <label for="Elektrisch">Elektrisch verstellbare Sitze</label>
+                <input type="checkbox" id="Elektrisch" name="Elektrisch">
+                <br>
+                <label for="Lenkrad">Lenkrad Heizung</label>
+                <input type="checkbox" id="Lenkrad" name="Lenkrad">
+                <br>
+                <label for="Ambiente">Ambiente Beleuchtung</label>
+                <input type="checkbox" id="Ambiente" name="Ambiente">
+
+                <br><br>
+            </td>
+            <td> <h2>Kontaktdaten</h2>
+                <br><br><label for="Telefonnummer">Telefon Nummer</label>
+                <input type="number" id="Telefon Nummer" name="Telefon Nummer" min="10000000" max="999999999999999"
+                    required>
+                <br><br>
+
+                <label for="Email">Email</label>
+                <input type="email" name="name" value="" size="30" maxlength="50" required>
+               
+                <br><br>
+                <br><br>
+                <br><br>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Anmerkungen:
+                <input type="text" maxlength="150"></td>
+            <td> 
+                <h3>Bestellung Abschließen</h3>
+                <input type="Submit" name="absenden" value="absenden" style="background-color: crimson;"></td>
+           
+                <td><a href="Supercars.html">Zurück</a>
+                </td>
+            </tr>
+            
+    </tbody>
+</table>
+</form>
+
+
+
+</html>
